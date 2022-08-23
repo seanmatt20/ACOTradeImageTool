@@ -1,3 +1,14 @@
+const express = require("express");
+const app = express();
+
+app.listen(3000, () => {
+    console.log("Trade Pic Bot is running!")
+})
+
+app.get("/", (req, res) => {
+    res.send("Trade Pic Bot is running!");
+})
+
 const DiscordJS = require('discord.js')
 const { Client, Intents, MessageAttachment } = require('discord.js')
 const WOKCommands = require('wokcommands')
